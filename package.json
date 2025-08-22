@@ -1,0 +1,27 @@
+{
+  "name": "aliens",
+  "version": "1.0.0",
+  "description": "learn mongodb",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"./src/config/alias-loader.js\", pathToFileURL(\"./\"));' index.js"
+  },
+  "keywords": [
+    "mongodb"
+  ],
+  "author": "c8tor",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "module-alias": "^2.2.3",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "_moduleAliases": {
+    "@": "src"
+  }
+}
